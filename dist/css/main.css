@@ -98,6 +98,7 @@ body {
   height: 100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 100;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/background.jpg);
@@ -113,12 +114,12 @@ body {
       z-index: -1;
       background: rgba(23, 33, 44, 0.9); }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   margin: 0;
-  font-weight: 400; }
-  h1.lg-heading, h2.lg-heading, h3.lg-heading {
+  font-weight: 100; }
+  h1.lg-heading, h2.lg-heading, h3.lg-heading, h4.lg-heading {
     font-size: 6rem; }
-  h1.sm-heading, h2.sm-heading, h3.sm-heading {
+  h1.sm-heading, h2.sm-heading, h3.sm-heading, h4.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(27, 38, 51, 0.5); }
@@ -154,14 +155,15 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(2, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
     border: #9DDCB1 3px solid; }
   .about-info .bio {
-    grid-area: bio; }
+    grid-area: bio;
+    font-size: 1.5rem; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
