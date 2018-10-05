@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Responsive portfolio website for Jon Sung",
   "main": "index.js",
+  "homepage": "https://jonsung89.github.io/jonsung-portfolio",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Jon Sung",
   "license": "ISC",
