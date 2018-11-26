@@ -101,7 +101,7 @@ body {
   font-weight: 100;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/background.jpg);
+    background: url(../img/background2.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -153,9 +153,9 @@ main {
 
 .about-info {
   display: grid;
-  grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
-  grid-template-columns: repeat(2, 1fr); }
+  grid-gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 'bioimage bio'  'job1 job1'  'job2 job2' 'job3 job3'; }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
@@ -163,17 +163,41 @@ main {
     border: #9DDCB1 3px solid; }
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    padding: 2rem;
+    cursor: default; }
+  .about-info .bio:hover {
+    color: #fff;
+    background-color: #202E3D;
+    transition: 0.5s; }
+  .about-info .job {
+    background: #202e3d;
+    padding: 3rem;
+    margin: 0 6rem;
+    border-bottom: #9DDCB1 5px solid; }
+    .about-info .job .title img {
+      width: 70px; }
+    .about-info .job .title h3 {
+      font-weight: 600;
+      padding: 1rem 0;
+      font-size: 1.4rem; }
+    .about-info .job .title .duration {
+      background-color: black;
+      color: #fff;
+      margin: 1.2rem 1.1rem;
+      padding: 0.4rem 1.1rem; }
+    .about-info .job h4 {
+      font-weight: 600;
+      font-size: 1.4rem; }
+  .about-info .job:hover {
+    background: #17212c;
+    transition: 1s; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
     grid-area: job2; }
   .about-info .job-3 {
     grid-area: job3; }
-  .about-info .job {
-    background: #202e3d;
-    padding: 0.5rem;
-    border-bottom: #9DDCB1 5px solid; }
 
 .projects {
   display: grid;

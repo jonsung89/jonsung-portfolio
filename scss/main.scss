@@ -75,12 +75,14 @@ main {
 }
 
 .about-info {
-  display: grid; 
-  grid-gap: 30px;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(2, 1fr); 
   grid-template-areas: 
-  'bioimage bio bio'
-  'job1 job2 job3';
-  grid-template-columns: repeat(2, 1fr);
+  'bioimage bio' 
+  'job1 job1' 
+  'job2 job2'
+  'job3 job3';
 
   .bio-image {
   grid-area: bioimage;
@@ -92,6 +94,46 @@ main {
   .bio {
     grid-area: bio;
     font-size: 1.5rem;
+    padding: 2rem;
+    cursor: default;
+  }
+  .bio:hover {
+    color: #fff;
+    background-color: #202E3D;
+    transition: 0.5s;
+  }
+
+  .job {
+    background: lighten($primary-color, 5);
+    padding: 3rem;
+    margin: 0 6rem;
+    border-bottom: $secondary-color 5px solid;
+    
+    .title {
+      img {
+        width: 70px;
+      }
+      h3 {
+        font-weight: 600;
+        padding: 1rem 0;
+        font-size: 1.4rem;
+      }
+      .duration {
+        background-color: black;
+        color: #fff;
+        margin: 1.2rem 1.1rem;
+        padding: 0.4rem 1.1rem;
+      }
+    }
+    h4 {
+      font-weight: 600;
+      font-size: 1.4rem;
+    }
+  }
+
+  .job:hover {
+    background: #17212c;    
+    transition: 1s;
   }
 
   .job-1 {
@@ -104,11 +146,6 @@ main {
     grid-area: job3
   }
 
-  .job {
-    background: lighten($primary-color, 5);
-    padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
-  }
 }
 
 // Work/Projects
