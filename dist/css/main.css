@@ -203,13 +203,20 @@ main {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr); }
-  .projects img {
-    width: 100%;
-    border: 3px #fff solid; }
-    .projects img:hover {
-      opacity: 0.5;
-      border-color: #9DDCB1;
-      transition: all 0.5s ease-out; }
+  .projects .item {
+    margin: 1rem; }
+    .projects .item img {
+      width: 100%;
+      border: 3px #aeaeae solid;
+      cursor: default; }
+      .projects .item img:hover {
+        opacity: 0.5;
+        border-color: #9DDCB1;
+        transition: all 0.5s ease-out; }
+    .projects .item .project-info {
+      width: 100%;
+      background: #fff;
+      color: #000; }
 
 .boxes {
   display: flex;
