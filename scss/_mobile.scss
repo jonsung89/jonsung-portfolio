@@ -67,6 +67,9 @@
 
   .projects {
     grid-template-columns: repeat(2, 1fr);
+    .item .project-info {
+      text-align: center;
+    }
   }
 }
 
@@ -86,9 +89,9 @@
     height: 35vh;
   }
 
-  .lg-heading {
-    margin-top: 2.5rem;
-    font-size: 5rem;
+  h1.lg-heading {
+    font-size: 4rem;
+    font-weight: 300;
   }
 
   .about-info {

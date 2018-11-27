@@ -118,7 +118,8 @@ h1, h2, h3, h4 {
   margin: 0;
   font-weight: 100; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading, h4.lg-heading {
-    font-size: 6rem; }
+    font-size: 6rem;
+    font-weight: 200; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading, h4.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
@@ -149,7 +150,7 @@ main {
   main#home {
     overflow: hidden; }
     main#home h1 {
-      margin-top: 20vh; }
+      margin-top: 25vh; }
 
 .about-info {
   display: grid;
@@ -214,11 +215,39 @@ main {
         opacity: 0.5;
         border-color: #9DDCB1;
         transition: all 0.5s ease-out; }
-    .projects .item .project-info {
-      width: 100%;
-      background: #eaeaea;
+    .projects .item .project-description {
+      background: #fff;
       color: #000;
-      border-radius: 0 0 8px 8px; }
+      padding: 1rem 1.3rem;
+      font-size: 1.2rem;
+      font-weight: 400; }
+      .projects .item .project-description .app-name {
+        font-weight: 700;
+        font-size: 1.4rem;
+        cursor: default; }
+      .projects .item .project-description .tp {
+        color: #34495E; }
+        .projects .item .project-description .tp:hover {
+          background: #8ae3f5;
+          color: #34495E;
+          transition: 0.8s; }
+      .projects .item .project-description .travel {
+        color: #183040; }
+        .projects .item .project-description .travel:hover {
+          background: #bbebca;
+          color: #34495E;
+          transition: 0.8s; }
+      .projects .item .project-description .amgi {
+        color: #F58A7E; }
+        .projects .item .project-description .amgi:hover {
+          background: #F58A7E;
+          color: #fff;
+          transition: 0.8s; }
+    .projects .item .project-info {
+      background: #bbb;
+      color: #000;
+      border-radius: 0 0 8px 8px;
+      font-weight: 500; }
       .projects .item .project-info .tech {
         margin-right: 0.2rem;
         font-weight: 500;
@@ -316,7 +345,9 @@ main {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+    .projects .item .project-info {
+      text-align: center; } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -327,9 +358,9 @@ main {
     height: 65vh; }
   .menu-branding {
     height: 35vh; }
-  .lg-heading {
-    margin-top: 2.5rem;
-    font-size: 5rem; }
+  h1.lg-heading {
+    font-size: 4rem;
+    font-weight: 300; }
   .about-info {
     grid-gap: 20px; }
     .about-info .bio-image {
