@@ -108,7 +108,8 @@ main {
   .job {
     background: lighten($primary-color, 5);
     padding: 3rem;
-    margin: 0 6rem;
+    // margin: 0 6rem;
+    margin: 0 10%;
     border-bottom: $secondary-color 5px solid;
     
     .title {
