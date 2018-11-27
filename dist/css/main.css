@@ -245,6 +245,15 @@ main {
       .boxes div:hover span {
         color: #000; }
 
+#contact .icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem; }
+  #contact .icons a {
+    margin: 0 1rem; }
+
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;

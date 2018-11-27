@@ -192,6 +192,7 @@ main {
   // display: grid;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  // justify-content: center;
   align-items: center;
   margin-top: 2rem;
   cursor: default;
@@ -212,6 +213,20 @@ main {
     }
   }
 }
+#contact .icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+
+  a {
+    margin: 0 1rem;
+  }
+}
+
+
+
 
 // Button Styles
 .btn {
