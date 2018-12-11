@@ -1,7 +1,7 @@
 $primary-color: #17212C;
 $secondary-color: #9DDCB1;
 $show-home-image: true;
-$home-image: url(../img/background2.jpg);
+$home-image: url(../img/background2-2.jpg);
 $background-opacity: 0.9;
 
 
@@ -60,3 +60,9 @@ $background-opacity: 0.9;
     @content;
   }
 }
+
+// @mixin mediaLandscape {
+//   @media screen and () {
+//     @content;
+//   }
+// }
