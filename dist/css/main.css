@@ -307,17 +307,37 @@ main {
   color: #fff;
   height: 60px; }
 
-@media screen and (min-width: 1171px) {
+@media screen and (orientation: landscape) {
+  main {
+    padding: 1rem; }
+    main main#home h1 {
+      margin-top: 10vh; }
+  h1.lg-heading {
+    font-size: 4rem;
+    font-weight: 300; }
+  .about-info {
+    grid-gap: 20px; }
+    .about-info .bio-image {
+      width: 200px; }
+    .about-info .job {
+      margin: 1rem 0;
+      padding: 2rem; }
+      .about-info .job .duration {
+        font-size: 1rem; }
+  .projects {
+    grid-template-columns: 1fr; } }
+
+@media screen and (min-width: 1171px) and (orientation: portrait) {
   .projects {
     grid-template-columns: repeat(3, 1fr); }
   .about-info {
     margin: 0 10% 0 10%; } }
 
-@media screen and (min-width: 769px) and (max-width: 1170px) {
+@media screen and (min-width: 769px) and (max-width: 1170px) and (orientation: portrait) {
   .projects {
     grid-template-columns: repeat(3, 1fr); } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (orientation: portrait) {
   main {
     align-items: center;
     text-align: center; }
@@ -349,7 +369,7 @@ main {
     .projects .item .project-info {
       text-align: center; } }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) and (orientation: portrait) {
   main {
     padding: 1rem; }
     main main#home h1 {
