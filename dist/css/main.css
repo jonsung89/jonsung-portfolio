@@ -307,7 +307,7 @@ main {
   color: #fff;
   height: 60px; }
 
-@media screen and (orientation: landscape) {
+@media screen and (max-width: 823px) and (orientation: landscape) {
   main {
     padding: 1rem; }
     main main#home h1 {
